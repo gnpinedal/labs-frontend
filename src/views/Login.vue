@@ -77,7 +77,7 @@
                         alert( "Error en la autenticación" );
                     }else{
                         setAuthenticationToken( response.data.access_token );
-                        this.$router.push( {name: 'home'} );
+                        this.$router.push( '../principal' );
                     }
                 } ).catch( error => {
                     if( error.response.status === 400 ){
